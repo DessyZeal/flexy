@@ -1,0 +1,18 @@
+body {
+    background-color: greenyellow;
+}
+.container{
+    width: 80%;
+    height: 40%;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: 50px 50px ;
+    grid-gap: 3px;
+}
+.container div:nth-child(2) {
+    background-color: burlywood;
+}
+.container div:nth-child(4) {
+    background-color: burlywood;
+}
