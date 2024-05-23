@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&family=Lato&family=Roboto&family=Sono:wght@500&display=swap');
+
+body {
+  font-family: 'Edu SA Beginner', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.calendar {
+  width: 300px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: bold;
+}
+
+.day {
+  padding: 5px;
+  text-align: center;
+}
+
+.dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.date {
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.date:hover {
+  width: 10px;
+  background-color: lightblue;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 900;
+}
+
+.prev, .next {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.month-image-container {
+  width: 100%;
+  max-height: 200px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add the shadow effect here */
+}
+
+#month-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.current-day {
+  width: 10px;
+  border: 2px solid black;
+  background-color: lightblue;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 900;
+}
+
+
+@media screen and (max-width: 400px) {
+  .calendar {
+    max-width: 90%;
+  }
+  
+  .day, .date {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .day, .date {
+    font-size: 10px;
+  }
+}
